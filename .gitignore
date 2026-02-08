@@ -1,0 +1,8 @@
+# 排除所有文件
+*
+
+# 仅保留以下文件
+!README.md
+!封面.png
+!.gitignore
+!.gitattributes
