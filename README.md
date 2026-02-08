@@ -273,13 +273,15 @@ $ python baidu_ck_manager.py single -i 0
 ```
 baidu-cookie-manager/
 |
-+-- baidu_ck_manager.py      # 核心引擎 (验证/注入/保活/封禁检测)
-+-- baidu_ck_gui.py          # GUI 界面 (CustomTkinter 暗色科技风)
-+-- requirements.txt          # 依赖: selenium, requests, customtkinter
-+-- 待保活.txt                 # 输入: 账号 + Cookie 数据
-+-- 保活成功.txt               # 输出: 有效账号 + 保活时间戳
-+-- cookies_backup.json       # 输出: JSON 格式完整备份
-+-- baidu_ck.log              # 运行日志 (含时间戳)
++-- baidu_ck_manager.py           # 核心引擎 (验证/注入/保活/封禁检测)
++-- baidu_ck_gui.py               # GUI 界面 (CustomTkinter 暗色科技风)
++-- test_single_ck.py             # BDUSS 深度测试 (结构分析/全站权限矩阵)
++-- ruliu_to_standard_bduss.py    # 如流账号转标准 BDUSS (Selenium 自动登录)
++-- requirements.txt               # 依赖: selenium, requests, customtkinter
++-- 待保活.txt                      # 输入: 账号 + Cookie 数据
++-- 保活成功.txt                    # 输出: 有效账号 + 保活时间戳
++-- cookies_backup.json            # 输出: JSON 格式完整备份
++-- baidu_ck.log                   # 运行日志 (含时间戳)
 ```
 
 <br/>
