@@ -10,6 +10,11 @@
 <h3>百度 Cookie 全生命周期自动化引擎 v3.0</h3>
 
 <p>
+  <img src="https://img.shields.io/badge/v4.0%20%E6%96%B0%E5%A2%9E-Web%E7%89%88%E8%B4%B4%E5%90%A7%E7%AD%BE%E5%88%B0%E5%8F%B0-2932e1?style=for-the-badge&labelColor=000000" />
+  <img src="https://img.shields.io/badge/%E7%AD%BE%E5%88%B0-%E5%85%B3%E6%B3%A8%20%E8%BF%90%E4%BD%9C-2932e1?style=for-the-badge&labelColor=000000" />
+</p>
+
+<p>
   <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/CustomTkinter-GUI-00C7B7?style=flat-square&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Selenium-4.15+-43B02A?style=flat-square&logo=selenium&logoColor=white" />
@@ -53,6 +58,31 @@
 > **严格 TBS+Passport 双重验证 | 5 端点全登录态校验 | 反检测 Selenium | GUI 可视化管理**
 
 </div>
+
+<br/>
+
+## v4.0 新增 / New in v4.0
+
+> **网页版贴吧签到台**：在 v3.0 保活引擎之上，新增浏览器访问的 Web 管理界面，一个服务同时管理**签到 / 发帖 / 保活**。
+
+| 模块 | 功能 |
+|:---:|:---|
+| **Web 界面** | 印刷操作台风格，离线可用零外部依赖，手机/电脑浏览器均可访问 |
+| **关注+签到** | 搜索贴吧名一键完成关注 + 签到，实时展示每个账号的 PASS/FAIL |
+| **发帖台** | 发帖 / 回复 / 删帖 / 删楼四工位，走贴吧 PC 新接口（v10.7.8.0+） |
+| **账号档案** | 批量导入（如流格式）、状态检测、管理密码保护删除 |
+| **自动保活** | 后台线程每 5 分钟自动心跳，ECG 生命体征实时监控 |
+| **签到台账** | 历史记录按吧汇总成功率，支持单条重签 / 清空 |
+| **验证引擎** | TBS + Passport 双验证，签到遇验证码如实报告不伪造成功 |
+
+```
+浏览器 ──► Flask 服务 ──► TiebaCore (PC 新接口签名)
+   │            │              │
+   │       账号 JSON 库    关注/签到/发帖/删帖
+   │       (RLock 线程安全)   0.3~0.8s 随机延迟
+   │            │              │
+   └── 自动保活线程(300s) ◄─── 5 端点心跳 + TBS
+```
 
 <br/>
 
@@ -299,7 +329,7 @@ baidu-cookie-manager/
 
 **本仓库仅提供项目说明与演示视频**
 
-**完整源代码为付费内容，购买后提供一对一技术支持**
+**完整源代码为付费内容（v3.0 桌面保活引擎 + v4.0 网页签到台），购买后提供一对一技术支持**
 
 <br/>
 
