@@ -32,6 +32,12 @@
 
 <br/>
 
+<a href="http://118.195.148.242:5678/">
+  <img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%BC%94%E7%A4%BA-%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C-2932e1?style=for-the-badge&logo=chrome&logoColor=white" />
+</a>
+
+<br/>
+
 <a href="https://www.bilibili.com/video/BV1qTF8zFEyG/">
   <img src="https://img.shields.io/badge/B%E7%AB%99%E5%AE%9E%E6%93%8D%E6%BC%94%E7%A4%BA-%E7%82%B9%E5%87%BB%E6%92%AD%E6%94%BE-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" />
 </a>
@@ -40,7 +46,12 @@
 
 <br/>
 
----
+## 在线体验 / Live Demo
+
+> **演示地址：http://118.195.148.242:5678/**（v4.0 网页版贴吧签到台，浏览器直接访问）
+
+- 手机 / 电脑浏览器打开即用，无需安装
+- 演示环境仅供功能体验，账号数据请勿写入
 
 ## 为什么需要它
 
